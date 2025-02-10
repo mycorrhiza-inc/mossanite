@@ -1,5 +1,6 @@
 {
-  # inputs MUST be an Attribute set that lists the .... You know
+  description = "Mossanite VM";
+
   inputs = {
     # Here we declare we need nixpkgs, notice we only say what branch
     # not the exact commit hash, flakes will take care of that 
