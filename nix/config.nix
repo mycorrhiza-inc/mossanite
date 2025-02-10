@@ -2,7 +2,7 @@
   users.users.root = {
     openssh.authorizedKeys.keys = [
     ];
-    initialPassword = "changeme"
+    initialPassword = "changeme";
     shell = pkgs.fish;
   };
   programs.fish = {
