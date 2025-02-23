@@ -5,6 +5,7 @@
     # Here we declare we need nixpkgs, notice we only say what branch
     # not the exact commit hash, flakes will take care of that 
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-24.11";
+    rust-overlay.url = "github:oxalica/rust-overlay";
   };
   # outputs MUST be a function that returns an Attribute set.
   # Everything else is just convention, convention that even some
@@ -21,8 +22,6 @@
       };
       system = "x86_64-linux";
       modules = [ ./nix/config.nix  ];
-
-
     };
   };
 }
