@@ -1,5 +1,5 @@
 {
-  description = "Mossanite VM";
+  description = "Mossanite: A Secure Enough, All in One, Infrastructure Platform";
 
   inputs = {
     # Here we declare we need nixpkgs, notice we only say what branch
@@ -14,7 +14,6 @@
     # `nix run` or `nix run .#default` should print "Hello world"
 
     # You can switch to the system described in ./configuration with
-    # `nixos-rebuild switch --flake .#hal9000`
     nixosConfigurations.mossanite = inputs.nixpkgs.lib.nixosSystem {
       specialArgs = {
         # remember "inherit x;" is the same as "x = x;"
