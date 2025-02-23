@@ -15,7 +15,7 @@
 
     # You can switch to the system described in ./configuration with
     # `nixos-rebuild switch --flake .#hal9000`
-    nixosConfigurations.mossanite-vm = inputs.nixpkgs.lib.nixosSystem {
+    nixosConfigurations.mossanite = inputs.nixpkgs.lib.nixosSystem {
       specialArgs = {
         # remember "inherit x;" is the same as "x = x;"
         inherit inputs; 
